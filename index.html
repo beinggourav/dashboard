@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="styling.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    
+
+
 </head>
+
 <body>
-   
+
     <section class="sidebar">
         <nav>
-            <h5 class="dash" ><img src="sidebar/logo.png" alt="">Dashboard kit</h5>
+            <h5 class="dash"><img src="sidebar/logo.png" alt=""> Dashboard kit</h5>
             <a href="#" class="active"><img src="sidebar/1. overview.png" alt=""> Overview</a>
             <a href="#"><img src="sidebar/2. tickets.png" alt=""> Tickets</a>
             <a href="#"><img src="sidebar/3. ideas.png" alt=""> Ideas</a>
@@ -28,33 +31,165 @@
         </nav>
     </section>
     <header>
-        <div class="over">Overview</div>
+        <div class="over"><h3>Overview</h3></div>
         <div class="user-area">
-        <a href="#"><img src="header/icon/search.png" alt=""></a>
-        <a href="#"><img src="header/icon/notifications/new.png" alt=""></a>
-        <span class="name">User name</span>
-        <a href="#"><img src="header/photo.png" alt=""></a>
+            <a href="#"><img src="header/icon/search.png" alt=""></a>
+            <a href="#"><img src="header/icon/notifications/new.png" alt=""></a>
+            <a href="#"><span class="name">User name</span></a>
+            <img src="header/photo.png" alt="">
         </div>
     </header>
     <section class="content">
         <div class="blocks">
             <div class="block">
-                <h6>Unresolved</h6>
-                <h2>60</h2>
+                <a href="#">
+                    <h6>Unresolved</h6>
+                    <h2>60</h2>
+                </a>
             </div>
-            <div class="block active">
-                <h6>Overdue</h6>
-                <h2>16</h2>
+            <div class="block ">
+                <a href="#" class="active">
+                    <h6 class="active">Overdue</h6>
+                    <h2>16</h2>
+                </a>
             </div>
             <div class="block">
-                <h6>Open</h6>
-                <h2>43</h2>
+                <a href="#">
+                    <h6>Open</h6>
+                    <h2>43</h2>
+                </a>
             </div>
             <div class="block">
-                <h6>On hold</h6>
-                <h2>64</h2>
+                <a href="#">
+                    <h6>On hold</h6>
+                    <h2>64</h2>
+                </a>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="row">
+                <div class="col left">
+                    <div class="container">
+                        <div class="trend">
+                            <h5>Today's Trend</h5>
+                            <span>as of 25 march, 11:18PM</span>
+                            <div class="scale">
+                                <span class="today">Today </span>
+                                <span> Yesterday</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="lower">
+                            <img src="horizontal lines.png" alt="">
+                            <img class="up1" src="graphic_main.png" alt="">
+                            <img src="vertical.png" class="up3" alt="">
+                            <img src="values.png" class="up2" alt="">
+                            <img src="hours.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col right">
+                    <div class="row mblock">
+                        <h6>Resolved</h6>
+                        <p>449</p>
+                    </div>
+                    <div class="row mblock">
+                        <h6>Recieved</h6>
+                        <p>426</p>
+                    </div>
+                    <div class="row mblock">
+                        <h6>Average first response time</h6>
+                        <p>33m</p>
+                    </div>
+                    <div class="row mblock">
+                        <h6>Average response time</h6>
+                        <p>3h 8m</p>
+                    </div>
+                    <div class="row mblock">
+                        <h6>Resolution with SLA</h6>
+                        <p>94%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col bottom">
+                    <div class="bottop">
+                        <h5 class="inline">Unresolved Tickets</h5>
+                        <span class="float"><a href="#">view details</a></span>
+                        <p class="fad">Group: <b>Support</b></p>
+                        <p class="inline">Waiting on Future request</p>
+                        <span class="float">4238</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="line">
+                            <p class="inline">Awating Customer Response</p>
+                            <span class="float">4238</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                            <p class="inline">Awating Development Fix</p>
+                            <span class="float">4238</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                            <p class="inline">Pending</p>
+                            <span class="float">4238</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col bottom">
+                    <div class="bottop">
+                        <h5 class="inline">tasks</h5>
+                        <span class="float"><a href="#">View all</a></span>
+                        <p class="fad">Today</p>
+                        <p class="inline "><a href="#" class="fad">Creat new Task</a></p>
+                        <span class="float"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-plus-square-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z" />
+                                </svg></a></span>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="line">
+                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                aria-label="...">
+                            <p class="inline">Finish Ticket Update</p>
+                            <span class="float"><button type="button"
+                                    class="btn btn-warning btn-sm">Urgent</button></span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                aria-label="...">
+                            <p class="inline">Create new Ticket example</p>
+                            <span class="float badge bg-primary">New</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="line">
+                            <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value=""
+                                aria-label="...">
+                            <p class="inline">Update ticket report</p>
+                            <span class="float"><button type="button"
+                                    class="btn btn-secondary btn-sm">Default</button></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+
 </body>
+
 </html>

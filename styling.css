@@ -1,9 +1,33 @@
 
+ /* For desktop:
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;} */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  } 
+  
+}
 body{
     background-color: lightgrey;
 }
 *{
     box-sizing: border-box;
+}
+a{
+    text-decoration: none;
 }
 .sidebar{
     width: 220px;
@@ -25,7 +49,6 @@ nav{
 nav a{
     display:block;
     padding:10px 20px;
-    text-decoration: none;
     color:white;
     
 }
@@ -51,6 +74,7 @@ header{
 .name{
     border-left: grey solid 1px;
     padding-left: 15px;
+    color:teal;
 }
 .user-area a{
     margin:0 5px;
@@ -60,6 +84,7 @@ header{
 }
 .user-area{
     float:right; 
+    
 }
 
 .content{
@@ -74,11 +99,101 @@ header{
     padding:10px 10px;
     text-align: center;
     background: white;
-    margin-bottom: 10px;
+    margin: 10px;
     
+}
+h6{
+    color:grey;
+}
+.blocks a{
+    
+    color:black;
 }
 .blocks .active{
         color:blue;
         border-color: blue;
 }
 
+.middle{
+    background-color: white;
+    border:1px solid rgb(187, 177, 177);
+    border-radius: 10px;
+}
+.left{
+    padding:10px;
+}
+.trend{
+    padding-bottom:30px;
+    
+}
+.scale{
+    display: inline-block;
+    float: right;
+}
+
+
+.lower{
+    position: relative;
+}
+.up1{
+    position: absolute;
+    top:0;
+}
+.up2{
+    position: absolute;
+    bottom: 30px;
+    right:0px;
+}
+.up3{
+    position: absolute;
+    bottom:23px;
+    left:414px;
+}
+.right{
+    border-left:1px solid lightgray;
+}
+.mblock{
+    padding-top: 20px;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    
+}
+div.mblock p {
+    font-size: 1.3rem;
+    font-weight:600;
+}
+.bottom{
+    background: white;
+    border:1px solid rgb(187, 177, 177);
+    border-radius: 10px;
+    margin:10px;
+    padding-top:20px;
+}
+.inline{
+    display:inline-block;
+    font-weight: 600;
+}
+
+.line{
+    border-top: 1px solid rgb(189, 177, 177);
+    padding:0 30px;
+    padding-top: 10px;
+}
+.float{
+    display:inline-block;
+    float:right;
+    color:rgb(189, 177, 177);
+}
+
+.btn{
+    border-radius: 10px;
+}
+.badge{
+    border-radius: 10px;
+}
+.bottop{
+    padding:0 20px;
+}
+.fad{
+    color: rgb(189, 177, 177);
+}
