@@ -22,6 +22,7 @@
 }
 body{
     background-color: lightgrey;
+    font-family: 'Roboto Slab', serif;
 }
 *{
     box-sizing: border-box;
@@ -30,14 +31,17 @@ a{
     text-decoration: none;
 }
 .sidebar{
-    width: 220px;
+    width: 260px;
     height:100%;
-    position: absolute;
+    position: fixed;
+    overflow: auto;
     background-color:rgb(54, 49, 48);
 }
 nav{
     padding-top:30px;
+    
 }
+
 .dash{
     margin-bottom: 10px;
     display:block;
@@ -56,7 +60,7 @@ nav a:hover{
     background-color:#5e4b4b ;
     color:white;
     border-left: 5px solid white;
-    padding: 10px 20px 10px 15px;
+    padding: 10px 15px 10px 15px;
     
 }
 nav .active{
@@ -66,7 +70,7 @@ nav .active{
     
 }
 header{
-    margin-left: 220px;
+    margin-left: 260px;
     padding:20px;
     padding-bottom: 30px; 
 }
@@ -84,11 +88,10 @@ header{
 }
 .user-area{
     float:right; 
-    
 }
 
 .content{
-    margin-left: 220px;
+    margin-left: 260px;
     padding:20px;
 }
 .block{
@@ -196,4 +199,74 @@ div.mblock p {
 }
 .fad{
     color: rgb(189, 177, 177);
+}
+
+
+/* page 2 */
+.sort{
+    float:right;
+    
+}
+.sort a{
+    color:darkgray;
+    padding:10px;
+}
+._1{
+    margin-bottom:30px;
+    margin-top: 20px;
+}
+th{
+    font-size: 0.8rem;
+    font-weight: 700;
+    color:gray;
+}
+tr {
+    transition: all .2s ease-in;
+    cursor: pointer;
+}
+tr:hover{
+    background-color: lightgrey;
+}
+
+.bord{
+    border-bottom: 1px solid grey;
+}
+.data{
+    display:flex;
+    align-items: center;
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+.data img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.parts{
+    align-items:centre;
+    border-top: 1px solid grey;
+}
+
+
+small{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color:rgb(184, 168, 168);
+}
+.issue{
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+.last{
+    display:flex;
+    justify-content: flex-end;
+    border-top: 1px solid grey;
+
+}
+.last div{
+    padding:20px;
+    width:300px;
+    text-align:center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color:rgb(184, 168, 168);
 }

@@ -6,9 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Overview</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styling.css">
 
 
@@ -20,7 +22,7 @@
         <nav>
             <h5 class="dash"><img src="sidebar/logo.png" alt=""> Dashboard kit</h5>
             <a href="#" class="active"><img src="sidebar/1. overview.png" alt=""> Overview</a>
-            <a href="#"><img src="sidebar/2. tickets.png" alt=""> Tickets</a>
+            <a href="tickets.html"><img src="sidebar/2. tickets.png" alt=""> Tickets</a>
             <a href="#"><img src="sidebar/3. ideas.png" alt=""> Ideas</a>
             <a href="#"><img src="sidebar/4. contacts.png" alt=""> Contacts</a>
             <a href="#"><img src="sidebar/5. agents.png" alt=""> Agents</a>
@@ -67,19 +69,21 @@
             </div>
         </div>
         <div class="middle">
-            <div class="row">
+             <div class="row"> 
                 <div class="col left">
                     <div class="container">
                         <div class="trend">
                             <h5>Today's Trend</h5>
                             <span>as of 25 march, 11:18PM</span>
                             <div class="scale">
-                                <span class="today">Today </span>
-                                <span> Yesterday</span>
+                                <span style="background-color: blue; width:20px; height:3px;"></span>
+                                <span style="color:rgb(8, 8, 241)">---</span>
+                                <span>Today</span>
+                                <span style="color:rgb(116, 100, 100)">---</span>
+                                <span > Yesterday</span>
                             </div>
                         </div>
                     </div>
-
                     <div class="container">
                         <div class="lower">
                             <img src="horizontal lines.png" alt="">
@@ -112,9 +116,9 @@
                         <p>94%</p>
                     </div>
                 </div>
-            </div>
+            </div> 
         </div>
-        <div>
+        
             <div class="row">
                 <div class="col bottom">
                     <div class="bottop">
@@ -146,7 +150,7 @@
                 </div>
                 <div class="col bottom">
                     <div class="bottop">
-                        <h5 class="inline">tasks</h5>
+                        <h5 class="inline">Tasks</h5>
                         <span class="float"><a href="#">View all</a></span>
                         <p class="fad">Today</p>
                         <p class="inline "><a href="#" class="fad">Creat new Task</a></p>
